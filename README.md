@@ -68,3 +68,14 @@ brasil-macro-credito/
 Todos os dados vêm do [Sistema Gerenciador de Séries Temporais (SGS) do
 Banco Central do Brasil](https://dadosabertos.bcb.gov.br/), uma API
 pública e gratuita.
+
+
+## Visualizações
+
+### Indicadores macroeconômicos
+
+<img src="graficos_macro.png">
+
+### Índice de pressão sobre o crédito
+
+<img src="indice_pressao_credito.png">
