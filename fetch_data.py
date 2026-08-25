@@ -42,7 +42,7 @@ def fetch_series(codigo: int, data_inicial: str, data_final: str) -> pd.DataFram
         "dataInicial": data_inicial,
         "dataFinal": data_final,
     }
-    resp = requests.get(url, params=params, timeout=30)
+    resp = requests.get(url, params=params, timeout=60)
     resp.raise_for_status()
 
     df = pd.DataFrame(resp.json())
@@ -51,7 +51,7 @@ def fetch_series(codigo: int, data_inicial: str, data_final: str) -> pd.DataFram
     return df
 
 
-def fetch_all(data_inicial: str = "01/01/2015", data_final: str | None = None) -> pd.DataFrame:
+def fetch_all(data_inicial: str = "01/01/2017", data_final: str | None = None) -> pd.DataFrame:
     """
     Busca todas as séries definidas em SERIES e as combina em um único
     DataFrame mensal (média do mês), indexado por data.

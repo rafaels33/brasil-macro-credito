@@ -28,8 +28,8 @@ inflação e câmbio se relacionam com a inadimplência das famílias?**
 ## Como rodar
 
 ```bash
-git clone <url-do-seu-repositorio>
-cd brasil-macro-credito
+git clone https://github.com/rafaels33/brasil-macro-credito.
+cd brasil-macro-credito.
 pip install -r requirements.txt
 python main.py
 ```

@@ -51,8 +51,8 @@ def plot_indice(indice, out_path="indice_pressao_credito.png"):
 
 def main():
     print("Coletando dados do Banco Central (SGS)...")
-    df = fetch_all(data_inicial="01/01/2015")
-    df = df.dropna()
+    df = fetch_all(data_inicial="01/01/2017")
+    df = df.dropna()    
 
     print("\nResumo estatístico:")
     print(resumo_estatistico(df))
